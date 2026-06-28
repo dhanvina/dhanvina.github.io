@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dhanvina.github.io/sitemap.xml

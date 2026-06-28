@@ -1,0 +1,98 @@
+{
+  "fetchedAt": "2026-06-28T00:00:00.000Z",
+  "user": "dhanvina",
+  "projects": [
+    {
+      "name": "Prompt Vault",
+      "description": "VS Code extension to save, organise, and reuse prompts directly inside VS Code — with categories, favourites, template variables, version history, and import/export.",
+      "url": "https://github.com/dhanvina/prompt-management",
+      "homepage": "https://marketplace.visualstudio.com/items?itemName=dhanvina.prompt-management",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "topics": ["vscode", "ai", "productivity", "prompts"],
+      "updatedAt": "2026-06-28T00:00:00Z",
+      "summary": "VS Code extension that lets developers save, organise, and reuse AI prompts without leaving the editor — with template variables, chaining, version history, and full local storage.",
+      "highlights": [
+        "53+ installs · 5-star rating on VS Code Marketplace",
+        "Template variables with {{variable}} syntax for dynamic prompts",
+        "Prompt chaining — execute multiple prompts sequentially",
+        "Fully local — no cloud sync, no tracking"
+      ],
+      "tech": ["TypeScript", "VS Code API", "JSON"],
+      "rank": 1
+    },
+    {
+      "name": "Critica",
+      "description": "AI-powered UI/UX design reviewer that analyses interfaces, surfaces accessibility issues, and generates actionable improvement suggestions.",
+      "url": "https://github.com/dhanvina/critica",
+      "homepage": null,
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": ["ai", "ux", "design", "llm"],
+      "updatedAt": "2026-06-28T00:00:00Z",
+      "summary": "Autonomous AI design reviewer — upload a screenshot or Figma link and get a structured critique covering layout, hierarchy, accessibility, and conversion signals.",
+      "highlights": [
+        "In ideation — design in progress",
+        "LLM-powered visual analysis pipeline",
+        "Accessibility and UX heuristic scoring"
+      ],
+      "tech": ["Python", "LangChain", "OpenAI Vision", "FastAPI"],
+      "rank": 2
+    },
+    {
+      "name": "MinutesAI",
+      "description": "LLM-powered meeting transcription and structured minutes generator (LangChain, Ollama).",
+      "url": "https://github.com/dhanvina/MinutesAI",
+      "homepage": null,
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "updatedAt": "2026-06-01T00:00:00Z",
+      "summary": "Auto-generate structured meeting minutes (agenda, decisions, action items) from raw transcripts.",
+      "highlights": [
+        "LangChain orchestration",
+        "Ollama local model support",
+        "Multi-format export: PDF/JSON/HTML/Markdown"
+      ],
+      "tech": ["Python", "LangChain", "Ollama"],
+      "rank": 3
+    },
+    {
+      "name": "SmartMark",
+      "description": "Automated evaluation system for handwritten answers using CNNs and OCR pipelines.",
+      "url": "https://github.com/dhanvina/SmartMark",
+      "homepage": null,
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "updatedAt": "2025-11-01T00:00:00Z",
+      "summary": "Transforms unstructured handwritten answers into structured, machine-readable data using OCR + CNNs.",
+      "highlights": [
+        "OCR pipeline",
+        "EfficientNet benchmarking",
+        "Reduced manual evaluation time by ~70%"
+      ],
+      "tech": ["Python", "TensorFlow", "PyTorch", "OCR"],
+      "rank": 4
+    },
+    {
+      "name": "FaceTrackEDU",
+      "description": "Face detection demo using OpenCV with Haar cascades.",
+      "url": "https://github.com/dhanvina/FaceTrackEDU",
+      "homepage": null,
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "topics": [],
+      "updatedAt": "2024-08-01T00:00:00Z",
+      "summary": "Simple face detection demo using OpenCV Haar cascades for educational purposes.",
+      "highlights": ["OpenCV", "Haar cascades", "Educational demo"],
+      "tech": ["Python", "OpenCV"],
+      "rank": 5
+    }
+  ]
+}
