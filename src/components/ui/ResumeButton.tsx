@@ -76,7 +76,7 @@ export const ResumeButton = ({ className = "", onClick }: ResumeButtonProps) => 
     return (
         <MagneticButton onClick={handleClick}>
             <motion.a
-                href="https://drive.google.com/file/d/1izp4u2wqtKNfSSXFTvX_VBnAe6vKKoT4/view?usp=sharing"
+                href="https://drive.google.com/file/d/1uh0025Y7KCZv1d82HIaoeKme9_dme-mA/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial="initial"
