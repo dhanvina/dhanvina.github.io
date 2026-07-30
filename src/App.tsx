@@ -130,7 +130,7 @@ export default function App() {
             'Full LangSmith observability across every agent step',
          ],
          tech: ['Python', 'LangGraph', 'LangChain', 'Groq', 'FastAPI', 'LangSmith', 'Pydantic'],
-         thumbnailUrl: '/covers/seovate.png',
+         thumbnailUrl: '/covers/seovate.webp',
          videoUrl: '',
       },
       {
@@ -163,7 +163,7 @@ export default function App() {
             'LangSmith instrumentation for observability and evaluation',
          ],
          tech: ['Python', 'LangGraph', 'LangChain', 'FastAPI', 'RAG', 'LangSmith', 'PostgreSQL'],
-         thumbnailUrl: '/covers/hirewise.png',
+         thumbnailUrl: '/covers/hirewise.webp',
          videoUrl: '',
       },
       {
@@ -191,7 +191,7 @@ export default function App() {
             'Stable Diffusion XL for on-brand AI-generated visuals',
          ],
          tech: ['Python', 'LangGraph', 'LangChain', 'OpenAI', 'Gemini', 'Groq', 'Stable Diffusion XL', 'FastAPI'],
-         thumbnailUrl: '/covers/postpilot.png',
+         thumbnailUrl: '/covers/postpilot.webp',
          videoUrl: '',
       },
    ];

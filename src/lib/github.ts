@@ -2,6 +2,12 @@ export const GITHUB_USER = 'Dhanvina';
 
 const PER_PAGE = 100;
 
+// GitHub Pages serves static files only, so the serverless functions in /api are
+// not deployed there and every call returns a 404 HTML page. Detect that host and
+// go straight to the public GitHub REST API instead of paying for a doomed request.
+// Any other host (Vercel, `vercel dev`) keeps using the cached /api endpoints.
+const HAS_SERVERLESS_API = !/\.github\.io$/i.test(globalThis.location?.hostname ?? '');
+
 export interface GitHubRepo {
     name: string;
     description: string;
@@ -112,13 +118,15 @@ export async function fetchPortfolioGitHubStats(signal?: AbortSignal): Promise<G
 }
 
 async function fetchPortfolioGitHubStatsOnce(signal?: AbortSignal): Promise<GitHubStatsPayload> {
-    try {
-        const stats = await fetchGitHubJson<GitHubStatsPayload>('/api/github-stats', signal);
-        if (typeof stats.stars === 'number' && Array.isArray(stats.repos)) {
-            return stats;
+    if (HAS_SERVERLESS_API) {
+        try {
+            const stats = await fetchGitHubJson<GitHubStatsPayload>('/api/github-stats', signal);
+            if (typeof stats.stars === 'number' && Array.isArray(stats.repos)) {
+                return stats;
+            }
+        } catch (error) {
+            console.warn('Portfolio GitHub stats API unavailable, falling back to GitHub:', error);
         }
-    } catch (error) {
-        console.warn('Portfolio GitHub stats API unavailable, falling back to GitHub:', error);
     }
 
     const repos = await fetchUserRepos(signal);
@@ -163,6 +171,10 @@ export async function fetchCachedRepoStats(owner: string, repo: string, signal?:
 }
 
 async function fetchCachedRepoStatsOnce(owner: string, repo: string, signal?: AbortSignal): Promise<GitHubRepoStats> {
+    if (!HAS_SERVERLESS_API) {
+        return fetchRepoStats(owner, repo, signal);
+    }
+
     try {
         const params = new URLSearchParams({ owner, repo });
         const stats = await fetchGitHubJson<GitHubRepoStats>(`/api/github-repo-stats?${params}`, signal);

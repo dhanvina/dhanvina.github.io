@@ -7,10 +7,10 @@ interface Client {
 }
 
 const CLIENTS: Client[] = [
-    { id: 'cybrisk',         name: 'Cybrisk',         file: 'cybrisk-removebg-preview.png' },
-    { id: 'hindustan-power', name: 'Hindustan Power', file: 'hindustan-power-removebg-preview.png' },
-    { id: 'ctrlfake',        name: 'CtrlFake',        file: 'ctrlfake-removebg-preview.png' },
-    { id: 'leadspotting',    name: 'Leadspotting',    file: 'leadspotting-removebg-preview.png' },
+    { id: 'cybrisk',         name: 'Cybrisk',         file: 'cybrisk-removebg-preview.webp' },
+    { id: 'hindustan-power', name: 'Hindustan Power', file: 'hindustan-power-removebg-preview.webp' },
+    { id: 'ctrlfake',        name: 'CtrlFake',        file: 'ctrlfake-removebg-preview.webp' },
+    { id: 'leadspotting',    name: 'Leadspotting',    file: 'leadspotting-removebg-preview.webp' },
 ];
 
 const ITEM_H = 136;       // logo height + gap (px)
